@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/tvSize"
+		android:text="Image Size"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/etSize"
+		android:layout_alignParentLeft="true" />
+    
+	<EditText
+		android:id="@+id/etSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:hint="@string/query_hint"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+	
+	<TextView 
+        android:id="@+id/tvColorFilter"
+		android:text="Color Filter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvSize"
+		android:layout_alignRight="@+id/tvSize"
+		android:layout_alignBaseline="@+id/etColorFilter"
+		android:layout_alignParentLeft="true" />
+    
+	<EditText
+		android:id="@+id/etColorFilter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/etSize"
+		android:layout_alignLeft="@+id/etSize"
+		android:hint="@string/query_hint"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+	
+	<TextView 
+        android:id="@+id/tvImageType"
+		android:text="Image Type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvColorFilter"
+		android:layout_alignRight="@+id/tvColorFilter"
+		android:layout_alignBaseline="@+id/etImageType"
+		android:layout_alignParentLeft="true"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+	<EditText
+		android:id="@+id/etImageType"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/etColorFilter"
+		android:layout_alignLeft="@+id/etColorFilter"
+		android:hint="@string/query_hint"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+	
+	<TextView 
+        android:id="@+id/tvSiteFilter"
+		android:text="Site Filter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvImageType"
+		android:layout_alignRight="@+id/tvImageType"
+		android:layout_alignBaseline="@+id/etSiteFilter"
+		android:layout_alignParentLeft="true" />
+    
+	<EditText
+		android:id="@+id/etSiteFilter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/etImageType"
+		android:layout_alignLeft="@+id/etImageType"
+		android:hint="@string/query_hint"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+</RelativeLayout>
